@@ -1,3 +1,6 @@
+# Alena Huynh
+
+
 def encoder(password1):
     password = str(password1)
     if len(password) != 8 or not password.isdigit():
