@@ -9,7 +9,6 @@ def encoder(password1):
         new_digit = (int(digit) + 3) % 10
         encoded_digits.append(str(new_digit))
 
-    # Join all encoded digits into a new password string
     encoded_password = ''.join(encoded_digits)
     print("Your password has been encoded and stored!")
 
