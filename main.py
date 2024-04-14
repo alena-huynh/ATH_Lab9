@@ -22,6 +22,7 @@ def encoder(password1):
 
     return encoded_password
 
+#Zilong Liddle Decoder function
 def decode(newstring):
     newlist = []
     decodedstring = ""
