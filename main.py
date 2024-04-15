@@ -33,6 +33,45 @@ def decode(newstring):
         decodedstring = decodedstring + str(final_list[i])
     return decodedstring
 
+'''
+def decode(encoded_password):
+    
+    decoded_digits = []
+    for digit in encoded_password:
+        new_digit = (int(digit) - 3) % 10
+        decoded_digits.append(str(new_digit))
+
+   
+    decoded_password = ''.join(decoded_digits)
+    return decoded_password
+
+    def main():
+    
+    encoded_password = ""  
+    while True:
+        choice = 0
+        while choice != 3:
+            print("Menu")
+            print("-------------")
+            choice = int(input("1. Encode\n2. Decode\n3. Quit\n"))
+
+            
+            if choice == 1:
+                encoded_password = encoder(input("Please enter your password to encode: "))
+                print(f"Encoded password: {encoded_password}")
+            elif choice == 2:
+                if encoded_password:
+                    decoded_string = decode(encoded_password)
+                    print(f"The encoded password is {encoded_password}, and the original password is {decoded_string}\n")
+                else:
+                    print("No encoded password available. Please encode a password first.")
+            elif choice == 3:
+                print("Exiting the program.")
+                quit()
+
+if __name__ == "__main__":
+    main()
+'''
 
 # prints a menu
 
